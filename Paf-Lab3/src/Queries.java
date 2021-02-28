@@ -7,7 +7,7 @@ public class Queries {
 	
 public static void insertItem(int itemId, String code, String name, Double price, String desc) throws SQLException {
 		
-	java.sql.Connection conn = Connection.getConnection();
+	java.sql.Connection conn = DbConnection.getConnection();
 		
 		String output = "";
 		
@@ -44,7 +44,7 @@ public static String readItems()
 	String output = "";
 	try
 	{
-		java.sql.Connection con = Connection.getConnection();
+		java.sql.Connection con = DbConnection.getConnection();
 		if (con == null)
 	{
 		return "Error while connecting to the database for reading.";

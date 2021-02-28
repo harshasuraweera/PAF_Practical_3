@@ -7,7 +7,7 @@ public class Main {
 		
 		System.out.print("First project for github\n\n");
 		
-		java.sql.Connection conn = Connection.getConnection();
+		java.sql.Connection conn = DbConnection.getConnection();
 		
 		if(conn == null) {
 			System.out.print("Connection failed!");

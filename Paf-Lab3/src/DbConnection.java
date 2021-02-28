@@ -2,7 +2,7 @@
 import java.sql.DriverManager;
 import com.mysql.cj.xdevapi.Statement;
 
-public class Connection {
+public class DbConnection {
 	 
 	private static java.sql.Connection conn = null;
 	static String url = "jdbc:mysql://localhost:3306/paf_test";
