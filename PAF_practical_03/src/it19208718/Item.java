@@ -129,7 +129,7 @@ public String readItems()
 	 + " type='button' value='Update' onclick='UpdateItems()'></td>"
 	 + "<td><form method='post' action='items.jsp'>"
 	 + "<input name='btnRemove' " 
-	 + " type='submit' value='Remove' onclick='DeleteItems()'>"
+	 + " type='submit' value='Remove' onclick='DeleteItems('"+itemID+"')'>"
 	 + "<input name='itemID' type='hidden' " 
 	 + " value='" + itemID + "'>" + "</form></td></tr>"; 
 	 } 
